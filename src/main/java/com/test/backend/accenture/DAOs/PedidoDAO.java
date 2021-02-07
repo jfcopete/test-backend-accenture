@@ -154,6 +154,7 @@ public class PedidoDAO {
 	/**
 	 * Actualiza un pedido generando una nueva verificación de precios
 	 * para evitar que un hacker pueda modificar el precio y comprar por menor precio un pedido
+	 * Además "valida" que la persona quien vaya a acrtualizar sea la dueña del recurso.
 	 * @param idCliente
 	 * @param pedido
 	 * @param idPedido
