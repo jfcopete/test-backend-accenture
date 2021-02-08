@@ -85,12 +85,12 @@ public class FacturaDAO {
 	 * @param id
 	 * @return
 	 */
-	public Factura deleteFacturaById(int id)
+	public Factura deleteFacturaByIdPedido(int idPedido)
 	{
 		Iterator<Factura> iterator = facturas.iterator();
 		while (iterator.hasNext()) {
 			Factura factura = (Factura) iterator.next();
-			if (factura.getIdFactura()==id) {
+			if (factura.getPedido().getIdPedido()==idPedido) {
 				iterator.remove();
 				return factura;
 			}

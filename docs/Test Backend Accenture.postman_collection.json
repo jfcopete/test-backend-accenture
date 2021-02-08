@@ -1,0 +1,374 @@
+{
+	"info": {
+		"_postman_id": "1c31f561-5ad9-4e1f-8b3d-6dc05434b298",
+		"name": "Test Backend Accenture",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "1 y 3. Modificar pedido y actualizar factura",
+			"item": [
+				{
+					"name": "localhost:8080/clientes/1/pedidos",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"productos\": [\r\n            {\r\n                \"idProducto\": 1,\r\n                \"name\": \"Procesador Ryzen 3600\",\r\n                \"description\": \"Procesador Ryzen\",\r\n                \"price\": 760000.0\r\n            },\r\n            {\r\n                \"idProducto\": 1,\r\n                \"name\": \"Procesador Ryzen 3600\",\r\n                \"description\": \"Procesador Ryzen\",\r\n                \"price\": 760000.0\r\n            },\r\n            {\r\n                \"idProducto\": 2,\r\n                \"name\": \"Diadema Gamer\",\r\n                \"description\": \"Diadema Gamer\",\r\n                \"price\": 60000.0\r\n            },\r\n            {\r\n                \"idProducto\": 3,\r\n                \"name\": \"Mouse Gamer Logitech\",\r\n                \"description\": \"Mouse Gamer Logitech\",\r\n                \"price\": 76000.0\r\n            },\r\n            {\r\n                \"idProducto\": 4,\r\n                \"name\": \"MousePad Gamer\",\r\n                \"description\": \"MousePad Gamer\",\r\n                \"price\": 30000.0\r\n            }\r\n        ],\r\n        \"price\": 926000.0,\r\n        \"idCliente\": 1,\r\n        \"date\": \"2021-02-08T01:21:57.635+00:00\",\r\n        \"state\": \"ACCEPTED\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/clientes/1/pedidos",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clientes",
+								"1",
+								"pedidos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/clientes/1/pedidos",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/clientes/1/pedidos",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clientes",
+								"1",
+								"pedidos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/clientes/1/pedidos",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"productos\": [\r\n            {\r\n                \"idProducto\": 1,\r\n                \"name\": \"Procesador Ryzen 3600\",\r\n                \"description\": \"Procesador Ryzen\",\r\n                \"price\": 760000.0\r\n            },\r\n            {\r\n                \"idProducto\": 2,\r\n                \"name\": \"Diadema Gamer\",\r\n                \"description\": \"Diadema Gamer\",\r\n                \"price\": 60000.0\r\n            },\r\n            {\r\n                \"idProducto\": 3,\r\n                \"name\": \"Mouse Gamer Logitech\",\r\n                \"description\": \"Mouse Gamer Logitech\",\r\n                \"price\": 76000.0\r\n            },\r\n            {\r\n                \"idProducto\": 4,\r\n                \"name\": \"MousePad Gamer\",\r\n                \"description\": \"MousePad Gamer\",\r\n                \"price\": 30000.0\r\n            }\r\n        ],\r\n        \"price\": 926000.0,\r\n        \"idCliente\": 1,\r\n        \"date\": \"2021-02-08T01:21:57.635+00:00\",\r\n        \"state\": \"ACCEPTED\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/clientes/1/pedidos",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clientes",
+								"1",
+								"pedidos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/clientes/1/pedidos/5",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/clientes/1/pedidos/5",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clientes",
+								"1",
+								"pedidos",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/clientes/1/pedidos",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"productos\": [\r\n            {\r\n                \"name\": \"Procesador Ryzen 3600\",\r\n                \"description\": \"Procesador Ryzen\",\r\n                \"price\": 760000.0\r\n            },\r\n            {\r\n                \"name\": \"Procesador Ryzen 3600\",\r\n                \"description\": \"Procesador Ryzen\",\r\n                \"price\": 760000.0\r\n            },\r\n            {\r\n                \"idProducto\": 2,\r\n                \"name\": \"Diadema Gamer\",\r\n                \"description\": \"Diadema Gamer\",\r\n                \"price\": 60000.0\r\n            },\r\n            {\r\n                \"idProducto\": 3,\r\n                \"name\": \"Mouse Gamer Logitech\",\r\n                \"description\": \"Mouse Gamer Logitech\",\r\n                \"price\": 76000.0\r\n            },\r\n            {\r\n                \"idProducto\": 4,\r\n                \"name\": \"MousePad Gamer\",\r\n                \"description\": \"MousePad Gamer\",\r\n                \"price\": 30000.0\r\n            }\r\n        ],\r\n        \"price\": 926000.0,\r\n        \"idCliente\": 1,\r\n        \"date\": \"2021-02-08T01:14:43.241+00:00\",\r\n        \"state\": \"ACCEPTED\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/clientes/1/pedidos",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clientes",
+								"1",
+								"pedidos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/facturas",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"productos\": [\r\n            {\r\n                \"idProducto\": 1,\r\n                \"name\": \"Procesador Ryzen 3600\",\r\n                \"description\": \"Procesador Ryzen\",\r\n                \"price\": 760000.0\r\n            },\r\n            {\r\n                \"idProducto\": 1,\r\n                \"name\": \"Procesador Ryzen 3600\",\r\n                \"description\": \"Procesador Ryzen\",\r\n                \"price\": 760000.0\r\n            },\r\n            {\r\n                \"idProducto\": 2,\r\n                \"name\": \"Diadema Gamer\",\r\n                \"description\": \"Diadema Gamer\",\r\n                \"price\": 60000.0\r\n            },\r\n            {\r\n                \"idProducto\": 3,\r\n                \"name\": \"Mouse Gamer Logitech\",\r\n                \"description\": \"Mouse Gamer Logitech\",\r\n                \"price\": 76000.0\r\n            },\r\n            {\r\n                \"idProducto\": 4,\r\n                \"name\": \"MousePad Gamer\",\r\n                \"description\": \"MousePad Gamer\",\r\n                \"price\": 30000.0\r\n            }\r\n        ],\r\n        \"price\": 926000.0,\r\n        \"idCliente\": 1,\r\n        \"date\": \"2021-02-08T01:21:57.635+00:00\",\r\n        \"state\": \"ACCEPTED\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/facturas",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"facturas"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Eliminar Pedido con Factura y Cancelar pedido",
+			"item": [
+				{
+					"name": "localhost:8080/clientes/1/pedidos",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"productos\": [\r\n            {\r\n                \"name\": \"Procesador Ryzen 3600\",\r\n                \"description\": \"Procesador Ryzen\",\r\n                \"price\": 760000.0\r\n            },\r\n            {\r\n                \"name\": \"Procesador Ryzen 3600\",\r\n                \"description\": \"Procesador Ryzen\",\r\n                \"price\": 760000.0\r\n            },\r\n            {\r\n                \"idProducto\": 2,\r\n                \"name\": \"Diadema Gamer\",\r\n                \"description\": \"Diadema Gamer\",\r\n                \"price\": 60000.0\r\n            },\r\n            {\r\n                \"idProducto\": 3,\r\n                \"name\": \"Mouse Gamer Logitech\",\r\n                \"description\": \"Mouse Gamer Logitech\",\r\n                \"price\": 76000.0\r\n            },\r\n            {\r\n                \"idProducto\": 4,\r\n                \"name\": \"MousePad Gamer\",\r\n                \"description\": \"MousePad Gamer\",\r\n                \"price\": 30000.0\r\n            }\r\n        ],\r\n        \"price\": 926000.0,\r\n        \"idCliente\": 1,\r\n        \"date\": \"2021-02-08T01:14:43.241+00:00\",\r\n        \"state\": \"ACCEPTED\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/clientes/1/pedidos",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clientes",
+								"1",
+								"pedidos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/clientes/1/pedidos",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"productos\": [\r\n            {\r\n                \"idProducto\": 1,\r\n                \"name\": \"Procesador Ryzen 3600\",\r\n                \"description\": \"Procesador Ryzen\",\r\n                \"price\": 760000.0\r\n            },\r\n            {\r\n                \"idProducto\": 2,\r\n                \"name\": \"Diadema Gamer\",\r\n                \"description\": \"Diadema Gamer\",\r\n                \"price\": 60000.0\r\n            },\r\n            {\r\n                \"idProducto\": 3,\r\n                \"name\": \"Mouse Gamer Logitech\",\r\n                \"description\": \"Mouse Gamer Logitech\",\r\n                \"price\": 76000.0\r\n            },\r\n            {\r\n                \"idProducto\": 4,\r\n                \"name\": \"MousePad Gamer\",\r\n                \"description\": \"MousePad Gamer\",\r\n                \"price\": 30000.0\r\n            }\r\n        ],\r\n        \"price\": 926000.0,\r\n        \"idCliente\": 1,\r\n        \"date\": \"2021-02-08T01:37:35.926+00:00\",\r\n        \"state\": \"ACCEPTED\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/clientes/1/pedidos",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clientes",
+								"1",
+								"pedidos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/clientes/1/pedidos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/clientes/1/pedidos",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clientes",
+								"1",
+								"pedidos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/clientes/1/pedidos/5",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/clientes/1/pedidos/5",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clientes",
+								"1",
+								"pedidos",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/facturas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/facturas",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"facturas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/clientes/1/pedidos Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"productos\": [\r\n            {\r\n                \"idProducto\": 1,\r\n                \"name\": \"Procesador Ryzen 3600\",\r\n                \"description\": \"Procesador Ryzen\",\r\n                \"price\": 760000.0\r\n            },\r\n            {\r\n                \"idProducto\": 2,\r\n                \"name\": \"Diadema Gamer\",\r\n                \"description\": \"Diadema Gamer\",\r\n                \"price\": 60000.0\r\n            },\r\n            {\r\n                \"idProducto\": 3,\r\n                \"name\": \"Mouse Gamer Logitech\",\r\n                \"description\": \"Mouse Gamer Logitech\",\r\n                \"price\": 76000.0\r\n            },\r\n            {\r\n                \"idProducto\": 4,\r\n                \"name\": \"MousePad Gamer\",\r\n                \"description\": \"MousePad Gamer\",\r\n                \"price\": 30000.0\r\n            }\r\n        ],\r\n        \"price\": 926000.0,\r\n        \"idCliente\": 1,\r\n        \"date\": \"2021-02-08T01:37:35.926+00:00\",\r\n        \"state\": \"ACCEPTED\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/clientes/1/pedidos",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clientes",
+								"1",
+								"pedidos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/clientes/1/pedidos/6",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/clientes/1/pedidos/6",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clientes",
+								"1",
+								"pedidos",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/facturas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/facturas",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"facturas"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

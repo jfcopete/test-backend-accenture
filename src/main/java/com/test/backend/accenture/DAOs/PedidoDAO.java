@@ -210,6 +210,7 @@ public class PedidoDAO {
 			if (pedido.getIdPedido()==idPedido && pedido.getIdCliente()==idCliente) {
 				if (isCancelledTime(pedido.getDate())==true) {
 					iteratos.remove();
+					facturaService.deleteFacturaByIdPedido(idPedido);
 					return pedido;
 				}
 				else {
@@ -217,6 +218,7 @@ public class PedidoDAO {
 					double newPrice= pedido.getPrice();
 					newPrice = (newPrice / 100)*10;
 					pedido.setPrice(newPrice);
+					facturaService.updateFactura(idPedido, pedido);
 				}
 			}
 		}
